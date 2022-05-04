@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMP - The Best Records Online Store </title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+    </nav>  
+<!--hero section  -->
+    <header class="hero-section">
+        <div>
+            <img src="images/Try1.png" class="logo" >
+            <p class="sub-heading">Vinyl Me Please</p>
+
+        </div>
+
+    </header>
+
+
+<section id="POP"></section>
+
+<!-- collections --> 
+    <section class="collection-container">
+        <a href="#" class="collection">
+            <img src="images/hiphop.jpg" alt="">
+            <p class="collection-title">Hip-hop</p>
+        </a>
+
+        <a href="#" class="collection">
+            <img src="images/alternative.jpg" alt="">
+            <p class="collection-title">Alternative</p>
+        </a>
+
+        <a href="#" class="collection">
+            <img src="images/pop.jpg" alt="">
+            <p class="collection-title">Pop</p>
+        </a>
+
+
+
+    </section>
+
+
+<section id="POP-02"></section>
+
+
+    <!-- Footer -->
+    <footer> </footer>
+
+
+    <!-- Scripts JS -->
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+
+
+    <script>
+        getProducts('Alternative').then(data => createProductSlider(data , '#POP' , 'Alternative'))
+        getProducts('Pop').then(data => createProductSlider(data , '#POP-02' , 'Pop'))
+    </script>
+
+</body>
+</html>
